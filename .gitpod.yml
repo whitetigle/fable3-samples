@@ -1,8 +1,8 @@
 image: gitpod/workspace-dotnet
 
 tasks:
-  - init: cd src && dotnet tool restore
-    command: dotnet fable watch src --run parcel index.html
+  - init: npm install -g parcel-bundler     
+    command: cd minimal && dotnet tool restore && dotnet fable watch src --run parcel index.html
 
 vscode:
   extensions:

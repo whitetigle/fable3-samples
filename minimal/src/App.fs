@@ -127,7 +127,7 @@ let div (classes: string list) (children: ReactElement list) =
 let appTitle =
     Html.p [
       prop.className "title"
-      prop.text "Elmish To-Do List"
+      prop.text "Elmish To-Do toto"
     ]
 
 let inputField (state: State) (dispatch: Msg -> unit) =
